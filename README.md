@@ -43,5 +43,6 @@ To pass the tests, you will need to write the following methods:
 - `BinarySearchTree#insert`: this method should take a value as input, create a
   new `Node` with that value, and insert it into the `Tree` instance. The method
   should insert nodes regardless of the tree's existing size, and should not
-  allow duplicate nodes to be inserted. The method should return the `Tree`
-  instance itself if the `Node` was inserted and `nil` otherwise.
+  allow duplicate nodes to be inserted. If the `Node` was inserted successfully,
+  the method should return that `Node`. Otherwise, the method should return
+  `nil`.
