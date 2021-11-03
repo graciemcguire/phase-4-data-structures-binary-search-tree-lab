@@ -35,13 +35,13 @@ You can run the tests at any point using `learn test` to check your work.
 
 To pass the tests, you will need to write the following methods:
 
+- `BinarySearchTree#search`: this method should take a target value as input and
+  search for the `Node` with that value in the `Tree` instance. The method
+  should return the `Node` with the target value if one is found and `nil`
+  otherwise.
+
 - `BinarySearchTree#insert`: this method should take a value as input, create a
   new `Node` with that value, and insert it into the `Tree` instance. The method
   should insert nodes regardless of the tree's existing size, and should not
   allow duplicate nodes to be inserted. The method should return the `Tree`
   instance itself if the `Node` was inserted and `nil` otherwise.
-
-- `BinarySearchTree#search`: this method should take a target value as input and
-  search for the `Node` with that value in the `Tree` instance. The method
-  should return the `Node` with the target value if one is found and `nil`
-  otherwise.
