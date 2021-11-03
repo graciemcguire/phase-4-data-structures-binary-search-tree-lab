@@ -7,32 +7,26 @@
 
 ## Introduction
 
-Now that you have learned about Binary Search Trees, it's time to put your
-knowledge to the test!
+In the previous lessons, you learned about different types of `Tree` structures
+and different methods for traversing them. In this lab, you'll get some practice
+working with a `BinarySearchTree`.
 
-Fork and clone this lab; you'll be coding in the `lib` folder. You can
-run the tests at any point using `learn test` to check your work.
+Fork and clone this lab, then take a look at the files in the `lib` folder. Note
+that we have provided you with the code for the `BinarySearchTree` and `Node`
+classes. You will be doing all of your coding in `lib/binary_search_tree.rb`.
+You can run the tests at any point using `learn test` to check your work.
 
 ## Instructions
 
-Write a method `BinarySearchTree#insert` that inserts a new node into the tree, and
-then returns the tree. The `#insert` method should insert nodes regardless of
-the tree's existing size, and should not allow duplicate nodes to be inserted.
+To pass the tests, you will need to write the following methods:
 
-For example:
+- `BinarySearchTree#insert`: this method should take a value as input, create a
+  new `Node` with that value, and insert it into the `Tree` instance. The method
+  should insert nodes regardless of the tree's existing size, and should not
+  allow duplicate nodes to be inserted. The method should return the `Tree`
+  instance itself if the `Node` was inserted and `nil` otherwise.
 
-- Input: `BinarySearchTree.insert(5)`
-- Output: ``
-
-- Input:  `BinarySearchTree.insert(11)`
-- Output: ``
-
-Write a method `BinarySearchTree#search` that takes in a target value and
-searches for that value in the tree. If the value is found it should return the
-node with the target value, and if it is not found it should return `nil`.
-
-- Input:  `BinarySearchTree.search(11)`
-- Output: `<Node>.value == 11`
-
-- Input:  `BinarySearchTree.search(100)`
-- Output: `nil`
+- `BinarySearchTree#search`: this method should take a target value as input and
+  search for the `Node` with that value in the `Tree` instance. The method
+  should return the `Node` with the target value if one is found and `nil`
+  otherwise.
